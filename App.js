@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class App extends React.Component {
+//NEW IMPORTS
+import Searchbar from './components/searchbar/Searchbar';
+
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Vendee begins</Text>
+      <Text>Vendee begins</Text>
+      <Searchbar/>
       </View>
     );
   }
 }
 
+
+
+//STYLES
 const styles = StyleSheet.create({
   container: {
     flex: 1,
